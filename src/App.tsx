@@ -3,8 +3,8 @@ import s from './App.module.scss'
 // Components
 import Navigation from './components/Navigation/Navigation'
 import Home from './components/Home/Home'
+import Skills from './components/Skills/Skills'
 import NightSky from './components/Animation/NightSky/NightSky'
-
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" render={() => <Home />} />
             <Route exact path="/about" render={() => <div />} />
-            <Route exact path="/skills" render={() => <div />} />
+            <Route exact path="/skills" render={() => <Skills />} />
             <Route exact path="/works" render={() => <div />} />
             <Route exact path="*" render={() => <div />} />
           </Switch>
