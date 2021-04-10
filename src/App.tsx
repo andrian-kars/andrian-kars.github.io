@@ -1,10 +1,16 @@
-import './App.scss'
+import s from './App.module.scss'
+import { Route, withRouter, HashRouter, Redirect } from 'react-router-dom'
+import Navigation from './components/Navigation/Navigation'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <main className={s.app}>
+      <HashRouter>
+        <Switch>
 
-    </div>
+        </Switch>
+      </HashRouter>
+    </main>
   )
 }
 
