@@ -1,5 +1,60 @@
 @import './../../styles/variables';
 
-.app {
-    background-color: $mainBgColor;
+.navigation {
+    background-color: $mainCompColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 69px;
+    min-height: 100vh;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: $svgColor;
+        transition: .2s;
+
+        &:hover {
+            fill: $svgHoverColor;
+        }
+    }
+}
+
+.active {
+    svg {
+        fill: $svgHoverColor;
+    }
+}
+
+.logo {
+    width: 59px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.links {
+    
+
+    .link {
+        display: inline-block;
+        margin-bottom: 30px;
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+
+
+.socials {
+
+    .social a {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
 }

@@ -1,5 +1,11 @@
 @import './styles/variables';
 
 .app {
+    display: flex;
+    min-height: 100vh;
     background-color: $mainBgColor;
+}
+
+.content {
+    width: 100%;
 }
