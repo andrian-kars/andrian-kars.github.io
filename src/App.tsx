@@ -5,23 +5,27 @@ import Navigation from './components/Navigation/Navigation'
 import Home from './components/Home/Home'
 import Skills from './components/Skills/Skills'
 import NightSky from './components/Animation/NightSky/NightSky'
+import { Provider } from 'react-redux'
+import store from './redux/store'
 
 const App = () => {
   return (
     <HashRouter>
-      <main className={s.app}>
+      <Provider store={store}>
+        <main className={s.app}>
           <NightSky />
           <Navigation />
           <div className={s.content}>
-          <Switch>
-            <Route exact path="/" render={() => <Home />} />
-            <Route exact path="/about" render={() => <div />} />
-            <Route exact path="/skills" render={() => <Skills />} />
-            <Route exact path="/works" render={() => <div />} />
-            <Route exact path="*" render={() => <div />} />
-          </Switch>
+            <Switch>
+              <Route exact path="/" render={() => <Home />} />
+              <Route exact path="/about" render={() => <div />} />
+              <Route exact path="/skills" render={() => <Skills />} />
+              <Route exact path="/works" render={() => <div />} />
+              <Route exact path="*" render={() => <div />} />
+            </Switch>
           </div>
-      </main>
+        </main>
+      </Provider>
     </HashRouter>
   )
 }
