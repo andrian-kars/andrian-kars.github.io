@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/andrian-kars/andrian-kars.github.io/static/css/main.92ca34fa.chunk.css",
+    "main.js": "/andrian-kars/andrian-kars.github.io/static/js/main.26a8491d.chunk.js",
+    "main.js.map": "/andrian-kars/andrian-kars.github.io/static/js/main.26a8491d.chunk.js.map",
+    "runtime-main.js": "/andrian-kars/andrian-kars.github.io/static/js/runtime-main.636847a6.js",
+    "runtime-main.js.map": "/andrian-kars/andrian-kars.github.io/static/js/runtime-main.636847a6.js.map",
+    "static/js/2.517fd42a.chunk.js": "/andrian-kars/andrian-kars.github.io/static/js/2.517fd42a.chunk.js",
+    "static/js/2.517fd42a.chunk.js.map": "/andrian-kars/andrian-kars.github.io/static/js/2.517fd42a.chunk.js.map",
+    "static/js/3.a8203b4e.chunk.js": "/andrian-kars/andrian-kars.github.io/static/js/3.a8203b4e.chunk.js",
+    "static/js/3.a8203b4e.chunk.js.map": "/andrian-kars/andrian-kars.github.io/static/js/3.a8203b4e.chunk.js.map",
+    "index.html": "/andrian-kars/andrian-kars.github.io/index.html",
+    "static/css/main.92ca34fa.chunk.css.map": "/andrian-kars/andrian-kars.github.io/static/css/main.92ca34fa.chunk.css.map",
+    "static/js/2.517fd42a.chunk.js.LICENSE.txt": "/andrian-kars/andrian-kars.github.io/static/js/2.517fd42a.chunk.js.LICENSE.txt",
+    "static/media/logo.74750d47.gif": "/andrian-kars/andrian-kars.github.io/static/media/logo.74750d47.gif",
+    "static/media/vader.0c592181.png": "/andrian-kars/andrian-kars.github.io/static/media/vader.0c592181.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.636847a6.js",
+    "static/js/2.517fd42a.chunk.js",
+    "static/css/main.92ca34fa.chunk.css",
+    "static/js/main.26a8491d.chunk.js"
+  ]
+}
