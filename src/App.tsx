@@ -1,8 +1,9 @@
-import { HashRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 import s from './App.module.scss'
 // Components
 import Navigation from './components/Navigation/Navigation'
 import Home from './components/Home/Home'
+import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Works from './components/Works/Works'
 import { Provider } from 'react-redux'
@@ -16,8 +17,9 @@ const App = () => {
           <Navigation />
           <div className={s.content}>
             <Switch>
-              <Route exact path="/" render={() => <Home />} />
-              <Route exact path="/about" render={() => <div />} />
+              <Route exact path="/" render={() => <Redirect to={'/news'} />} />
+              <Route exact path="/home" render={() => <Home />} />
+              <Route exact path="/about" render={() => <About />} />
               <Route exact path="/skills" render={() => <Skills />} />
               <Route exact path="/works" render={() => <Works />} />
               <Route exact path="*" render={() => <div />} />

@@ -2,17 +2,38 @@
 
 .skills {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     width: 100%;
     background-color: $mainBgColor;
+
+    h2 {
+        color: $whiteColor;
+        font-size: 52px;
+        font-weight: 700;
+        margin-top: 30px;
+        z-index: 69;
+
+        span {
+            color: $mainColor;
+        }
+    }
+
+    p {
+        text-align: center;
+        line-height: 20px;
+        font-style: italic;
+        margin: 10px 0 50px;
+        z-index: 69;
+    }
 }
 
 .content {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    z-index: 69;
 }
 
 .item {

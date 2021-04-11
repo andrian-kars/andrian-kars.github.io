@@ -8,7 +8,6 @@ const initialState = {
         { skill: 'Rest APIs', level: 4, description: 'Advanced' },
         { skill: 'HTML & CSS', level: 5, description: 'Expert' },
         { skill: 'SASS, LESS', level: 5, description: 'Expert' },
-        { skill: 'BEM, CSS Mod.', level: 5, description: 'Expert' },
         { skill: 'Bootstrap', level: 5, description: 'Expert' },
         { skill: 'jQuery', level: 3, description: 'Intermediate' },
         { skill: 'Webpack & Gulp', level: 4, description: 'Advanced' },
