@@ -8,7 +8,7 @@ import YodaSaber from '../Animation/Sabers/YodaSaber'
 import AhsokaSaber from '../Animation/Sabers/AhsokaSaber'
 import MaceSaber from '../Animation/Sabers/MaceSaber'
 import DarkSaber from '../Animation/Sabers/DarkSaber'
-import NightSky from './../Animation/NightSky/NightSky'
+import ShootingStars from './../Animation/ShootingStars/ShootingStars'
 
 type PropsType = {
     hard: Array<{
@@ -47,7 +47,7 @@ const Skills: React.FC<PropsType> = ({hard, soft, languages}) => {
         </div>
     ))
     return <div className={s.skills}>
-        <NightSky />
+        <ShootingStars />
         <h2>My Hard and Soft <span>Lightsabers</span></h2>
         <p>if you are Force-sensitive you might be able to activate them<br />(click on them)</p>
         <div className={s.content}>
