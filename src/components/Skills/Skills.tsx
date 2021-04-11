@@ -9,21 +9,12 @@ import AhsokaSaber from '../Animation/Sabers/AhsokaSaber'
 import MaceSaber from '../Animation/Sabers/MaceSaber'
 import DarkSaber from '../Animation/Sabers/DarkSaber'
 import ShootingStars from './../Animation/ShootingStars/ShootingStars'
+import { HardType, LanguagesType, SoftType } from '../../Types'
 
 type PropsType = {
-    hard: Array<{
-        skill: string
-        level: number
-        description: string
-    }>
-    soft: Array<{
-        skill: string
-    }>
-    languages: Array<{
-        skill: string
-        level: number
-        description: string
-    }>
+    hard: Array<HardType>
+    soft: Array<SoftType>
+    languages: Array<LanguagesType>
 }
 
 const Skills: React.FC<PropsType> = ({hard, soft, languages}) => {
@@ -49,7 +40,7 @@ const Skills: React.FC<PropsType> = ({hard, soft, languages}) => {
     return <div className={s.skills}>
         <ShootingStars />
         <h2>My Hard and Soft <span>Lightsabers</span></h2>
-        <p>if you are Force-sensitive you might be able to activate them<br />(click on them)</p>
+        <p>if you are Force-sensitive you might be able to activate them<br />(try to click them)</p>
         <div className={s.content}>
             <div className={s.hardSkills}>{hardSkills}</div>
             <div>
