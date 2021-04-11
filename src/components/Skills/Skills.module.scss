@@ -11,5 +11,11 @@
 
 .content {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.item {
+    width: 590px;
+    margin-bottom: 40px;
 }

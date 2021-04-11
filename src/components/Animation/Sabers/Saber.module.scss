@@ -1,21 +1,33 @@
+.sabers {
+  display: flex;
+}
+
 .hilt {
   cursor:crosshair;
-  display:inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   outline:none;
-  height: 10px;
-  width: 80px;
+  height: 20px;
+  width: 140px;
   background: linear-gradient(180deg, #737373, #111);
   border-radius: 3px 0 0 3px;
   border: 2px outset #737373;
   -webkit-box-reflect: below 1px linear-gradient(180deg, transparent, rgba(255,255,255,0.3));
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b8b4b4;
 }
 .hilt:active {
   border: 2px outset #737373;
 }
 
 .saber {
-  display:inline-block;
-  height: 10px;
+  display: flex;
+  justify-content: center;
+  height: 15px;
   width: 0px;
   background: #fff;
   border-radius: 0 50px 50px 0;
@@ -23,8 +35,27 @@
   right: 5px;
   -webkit-box-reflect: below 1px linear-gradient(180deg, transparent, rgba(255,255,255,0.2));
   transition: all 1s;
+
+  span {
+    visibility: hidden;
+    opacity: 0;
+    font-style: italic;
+    font-size: 14px;
+    transition: all .5s;
+    letter-spacing: 1px;
+  }
+
 }
-.saber#darkSaber {
+.darkSaber {
   background: #000;
   border-radius: 0 50px 0 0;
+}
+
+.skill {
+  position: absolute;
+  z-index: 999;
+}
+
+.description {
+  display: none;
 }

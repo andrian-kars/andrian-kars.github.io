@@ -7,8 +7,8 @@ const initialState = {
         { skill: 'Node.js', level: 3, description: 'Intermediate' },
         { skill: 'Rest APIs', level: 4, description: 'Advanced' },
         { skill: 'HTML & CSS', level: 5, description: 'Expert' },
-        { skill: 'SASS, LESS & PostCSS', level: 5, description: 'Expert' },
-        { skill: 'BEM. CSS Modules', level: 5, description: 'Expert' },
+        { skill: 'SASS, LESS', level: 5, description: 'Expert' },
+        { skill: 'BEM, CSS Mod.', level: 5, description: 'Expert' },
         { skill: 'Bootstrap', level: 5, description: 'Expert' },
         { skill: 'jQuery', level: 3, description: 'Intermediate' },
         { skill: 'Webpack & Gulp', level: 4, description: 'Advanced' },
@@ -32,9 +32,9 @@ const initialState = {
         skill: string
     }>,
     languages: [
-        { skill: 'English', level: 5, description: 'C1' },
-        { skill: 'German', level: 4, description: 'B2' },
-        { skill: 'Japanese', level: 1, description: 'A1' },
+        { skill: 'English', level: 3, description: 'C1. Speaking as well' },
+        { skill: 'German', level: 2, description: 'B2. Lived in Germany for 4 years' },
+        { skill: 'Japanese', level: 1, description: 'A1. Currenty improving' },
     ] as Array<{
         skill: string
         level: number

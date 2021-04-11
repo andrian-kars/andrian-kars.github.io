@@ -7,7 +7,6 @@ import Skills from './components/Skills/Skills'
 import Works from './components/Works/Works'
 import { Provider } from 'react-redux'
 import store from './redux/store'
-import Saber from './components/Animation/Sabers/LukeSaber'
 
 const App = () => {
   return (
@@ -18,7 +17,7 @@ const App = () => {
           <div className={s.content}>
             <Switch>
               <Route exact path="/" render={() => <Home />} />
-              <Route exact path="/about" render={() => <Saber />} />
+              <Route exact path="/about" render={() => <div />} />
               <Route exact path="/skills" render={() => <Skills />} />
               <Route exact path="/works" render={() => <Works />} />
               <Route exact path="*" render={() => <div />} />
