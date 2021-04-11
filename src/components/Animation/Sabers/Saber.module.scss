@@ -1,0 +1,30 @@
+.hilt {
+  cursor:crosshair;
+  display:inline-block;
+  outline:none;
+  height: 10px;
+  width: 80px;
+  background: linear-gradient(180deg, #737373, #111);
+  border-radius: 3px 0 0 3px;
+  border: 2px outset #737373;
+  -webkit-box-reflect: below 1px linear-gradient(180deg, transparent, rgba(255,255,255,0.3));
+}
+.hilt:active {
+  border: 2px outset #737373;
+}
+
+.saber {
+  display:inline-block;
+  height: 10px;
+  width: 0px;
+  background: #fff;
+  border-radius: 0 50px 50px 0;
+  position:relative;
+  right: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(180deg, transparent, rgba(255,255,255,0.2));
+  transition: all 1s;
+}
+.saber#darkSaber {
+  background: #000;
+  border-radius: 0 50px 0 0;
+}

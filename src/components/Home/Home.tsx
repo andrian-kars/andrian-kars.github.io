@@ -1,9 +1,11 @@
 import s from './Home.module.scss'
 import vader from './../../images/background/vader.png'
 import ButtonTypeOne from './../Animation/Buttons/ButtonTypeOne'
+import NightSky from './../Animation/NightSky/NightSky'
 
 const Home = () => {
     return <div className={s.home}>
+        <NightSky />
         <div className={s.content}>
             <h1>Hi,<br/>
                 I'm <span>Andrian,</span><br />

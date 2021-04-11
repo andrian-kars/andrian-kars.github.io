@@ -28,7 +28,13 @@
 }
 
 .stars{
-  background: #000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+  	background: #000;
+	z-index: 10;
 }
 
 //Change colors for multi-colors star groups
