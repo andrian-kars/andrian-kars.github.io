@@ -8,6 +8,7 @@ import Skills from './components/Skills/Skills'
 import Works from './components/Works/Works'
 import { Provider } from 'react-redux'
 import store from './redux/store'
+import BucketOfBolts from './components/Animation/BucketOfBolts/BucketOfBolts'
 
 const App = () => {
   return (
@@ -17,11 +18,12 @@ const App = () => {
           <Navigation />
           <div className={s.content}>
             <Switch>
-              <Route exact path="/" render={() => <Redirect to={'/news'} />} />
+              <Route exact path="/" render={() => <Redirect to={'/home'} />} />
               <Route exact path="/home" render={() => <Home />} />
               <Route exact path="/about" render={() => <About />} />
               <Route exact path="/skills" render={() => <Skills />} />
               <Route exact path="/works" render={() => <Works />} />
+              <Route exact path="/something" render={() => <BucketOfBolts />} />
               <Route exact path="*" render={() => <div />} />
             </Switch>
           </div>

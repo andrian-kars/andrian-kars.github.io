@@ -21,13 +21,13 @@ const Mandalorian = () => {
                     </filter>
                     <linearGradient id="saber" spreadMethod="reflect" x1="50%" y1="-20%">
                         <animateTransform attributeName="gradientTransform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"></animateTransform>
-                        <stop offset="0" stop-color="#ff00ff">
-                            <animate attributeName="stop-color" values="#ff00ff; #ff0000; #ff0000; #ff00ff; #0000ff; #0000ff; #ff00ff" dur="16s" repeatCount="indefinite"></animate>
+                        <stop offset="0" stopColor="#ff00ff">
+                            <animate attributeName="stopColor" values="#ff00ff; #ff0000; #ff0000; #ff00ff; #0000ff; #0000ff; #ff00ff" dur="16s" repeatCount="indefinite"></animate>
                         </stop>
-                        <stop offset="1%" stop-color="#ff00ff">
-                            <animate attributeName="stop-color" values="#ff00ff; #ff0000; #ff0000; #ff00ff; #0000ff; #0000ff; #ff00ff" dur="16s" repeatCount="indefinite"></animate>
+                        <stop offset="1%" stopColor="#ff00ff">
+                            <animate attributeName="stopColor" values="#ff00ff; #ff0000; #ff0000; #ff00ff; #0000ff; #0000ff; #ff00ff" dur="16s" repeatCount="indefinite"></animate>
                         </stop>
-                        <stop offset="5%" stop-color="#000000"></stop>
+                        <stop offset="5%" stopColor="#000000"></stop>
                     </linearGradient>
                     <mask id="mask">
                         <rect x="0" y="0" width="100%" height="100%" fill="none" filter="url(#alpha)"></rect>
