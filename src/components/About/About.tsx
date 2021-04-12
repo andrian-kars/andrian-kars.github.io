@@ -11,14 +11,14 @@ type PropsType = {
 }
 
 const About: React.FC<PropsType> = ({ aboutInfo, educationInfo, experienceInfo}) => {
-    const about = aboutInfo.map(it => ( <div className={s.item}>
+    const about = aboutInfo.map(it => ( <div key={it.title} className={s.item}>
         <p className={s.titleAbout}>{it.title}<span className={s.descriptionAbout}>{it.description}</span></p>
     </div>))
-    const education = educationInfo.map(it => ( <div className={s.item}>
+    const education = educationInfo.map(it => ( <div key={it.title} className={s.item}>
         <p className={s.title}>{it.title}<span className={s.time}>{it.time}</span></p>
         <p className={s.description}>{it.description}</p>
     </div>))
-    const experience = experienceInfo.map(it => ( <div className={s.item}>
+    const experience = experienceInfo.map(it => ( <div key={it.title} className={s.item}>
         <p className={s.title}>{it.title}<span className={s.time}>{it.time}</span><a href={it.link} target='_blank' rel='noreferrer' className={s.link}>here</a></p>
         <p className={s.description}>{it.description}</p>
     </div>))

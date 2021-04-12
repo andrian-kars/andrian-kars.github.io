@@ -1,17 +1,21 @@
 @import './../../../styles/variables';
 
 .mandalorian {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: 100px;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 15;
 
   svg {
     width: 100vh;
     height: 100vh;
-    max-width: 500px;
-    max-height: 500px;
-    fill: red;
+    max-width: 600px;
+    max-height: 600px;
   }
 } 

@@ -1,6 +1,6 @@
 import s from './Home.module.scss'
 import vader from './../../images/background/vader.png'
-import ButtonTypeOne from './../Animation/Buttons/ButtonTypeOne'
+import ButtonTypeOne from './../Animation/ButtonTypeOne/ButtonTypeOne'
 import NightSky from './../Animation/NightSky/NightSky'
 
 const Home = () => {

@@ -1,4 +1,4 @@
-import s from './Buttons.module.scss'
+import s from './ButtonTypeOne.module.scss'
 
 type PropsType = {
     href: string
