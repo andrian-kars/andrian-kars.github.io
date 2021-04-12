@@ -1,9 +1,29 @@
 @import './styles/variables';
 
 .app {
-    display: flex;
+    display: none;
     min-height: 100vh;
     background-color: $mainBgColor;
+
+    @media (min-width: 1400px) {
+        display: flex;
+    }
+}
+
+.mobile {
+    background-color: $mainBgColor;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+
+    @media (min-width: 1400px) {
+        display: none;
+    }
 }
 
 .content {
