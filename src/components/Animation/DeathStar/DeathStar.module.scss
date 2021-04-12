@@ -1,7 +1,11 @@
-$grey: #2F2F2F;
+$grey: transperent;
 $white: #F7F7F7;
 
 .deathStart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
   position: absolute;
 	top: 0;
 	right: 0;
@@ -15,9 +19,6 @@ $white: #F7F7F7;
   position: relative;
   width: 800px;
   height: 500px;
-  display: block;
-  margin: auto;
-  margin-top: 6%;
 }
 
 @keyframes shine {

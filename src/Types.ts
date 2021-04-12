@@ -25,4 +25,6 @@ export type WorksType = {
 export type AboutType = {
     title: string
     description: string
+    time?: string
+    link?: string
 }

@@ -11,27 +11,39 @@ type PropsType = {
 }
 
 const About: React.FC<PropsType> = ({ aboutInfo, educationInfo, experienceInfo}) => {
-    const about = aboutInfo.map(it => <p className={s.aboutText}><span>{it.title}</span>{it.description}</p>)
-    const education = educationInfo.map(it => <p className={s.text}><span>{it.title}</span>{it.description}</p>)
-    const experience = experienceInfo.map(it => <p className={s.text}><span>{it.title}</span>{it.description}</p>)
-    
+    const about = aboutInfo.map(it => ( <div className={s.item}>
+        <p className={s.titleAbout}>{it.title}<span className={s.descriptionAbout}>{it.description}</span></p>
+    </div>))
+    const education = educationInfo.map(it => ( <div className={s.item}>
+        <p className={s.title}>{it.title}<span className={s.time}>{it.time}</span></p>
+        <p className={s.description}>{it.description}</p>
+    </div>))
+    const experience = experienceInfo.map(it => ( <div className={s.item}>
+        <p className={s.title}>{it.title}<span className={s.time}>{it.time}</span><a href={it.link} target='_blank' rel='noreferrer' className={s.link}>here</a></p>
+        <p className={s.description}>{it.description}</p>
+    </div>))
+
     return <div className={s.about}>
         <DeathStar />
         <div className={s.content}>
             <div className={s.left}>
-                <div className={s.item}>
+                <div className={`${s.section} ${s.sectionAbout}`}>
                     <h3>Me, Myself & I</h3>
                     {about}
                 </div>
-                <div className={s.item}>
+                <div className={s.section}>
                     <h3>Education</h3>
-                    {education}
+                    <div className={s.items}>
+                        {education}
+                    </div>
                 </div>
             </div>
             <div className={s.right}>
-                <div className={s.item}>
+                <div className={s.section}>
                     <h3>Experience</h3>
-                    {experience}
+                    <div className={s.items}>
+                        {experience}
+                    </div>
                 </div>
             </div>
         </div>

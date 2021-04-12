@@ -2,46 +2,105 @@
 
 .about {
     display: flex;
+    min-height: 100vh;
 }
 
 .content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 10%;
+    padding: 100px 7% 0;
     z-index: 69;
 }
 
 .left, .right {
     display: flex;
+    width: 380px;
     flex-direction: column;
 }
 
-.right {
-
-}
-
-.item {
-    margin-bottom: 50px;
+.section {
+    color: $whiteColor;
 
     h3 {
         font-weight: 700;
         font-size: 52px;
+        margin-bottom: 5px;
+
+        &::first-letter {
+            color: $mainColor;
+        }
     }
+}
 
-    span {
-        font-weight: 700;
+.sectionAbout {
+    margin-bottom: 40px;
+}
+
+.titleAbout {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+    .descriptionAbout {
+        padding-left: 10px;
+        font-weight: 400;
     }
+}
 
-    .aboutText {
-        display: flex;
-        justify-content: space-between;
-        width: 320px;
-    }
+.items {
+    padding-top: 10px;
+    padding-left: 20px;
+    border-left: 1px solid $mainColor;
 
-    .text {
-        display: flex;
-        flex-direction: column;
+    .item {
+        position: relative;
+        margin-bottom: 20px;
 
+        &::first-letter {
+            font-weight: 700;
+            font-size: 19px;
+            font-style: italic;
+            color: $mainColor;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -25.5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $mainColor;
+        }
+
+        .title {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .time, .link {
+            font-style: italic;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+
+        .time {
+            color: $scroll;
+        }
+
+        .link {
+            font-weight: 400;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
