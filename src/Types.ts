@@ -21,3 +21,8 @@ export type WorksType = {
     photo: string
     link: string
 }
+
+export type AboutType = {
+    title: string
+    description: string
+}

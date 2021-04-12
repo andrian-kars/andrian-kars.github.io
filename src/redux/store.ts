@@ -1,10 +1,12 @@
 import { combineReducers, createStore } from 'redux'
+import aboutReducer from './aboutReducer'
 import skillsReducer from './skillsReducer'
 import worksReducer from './worksReducer'
 
 const rootReducer = combineReducers({
     skills: skillsReducer,
-    works: worksReducer
+    works: worksReducer,
+    about: aboutReducer
 })
 
 type RootReducerType = typeof rootReducer // (globalstate: GLOBALSTATE) => GLOBALSTATE

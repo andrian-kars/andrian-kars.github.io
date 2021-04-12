@@ -3,3 +3,45 @@
 .about {
     display: flex;
 }
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10%;
+    z-index: 69;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+
+}
+
+.item {
+    margin-bottom: 50px;
+
+    h3 {
+        font-weight: 700;
+        font-size: 52px;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+    .aboutText {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
