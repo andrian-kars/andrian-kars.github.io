@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/andrian-kars/andrian-kars.github.io/static/css/main.fe9fb039.chunk.css",
-    "main.js": "/andrian-kars/andrian-kars.github.io/static/js/main.4b55d3ea.chunk.js",
-    "main.js.map": "/andrian-kars/andrian-kars.github.io/static/js/main.4b55d3ea.chunk.js.map",
-    "runtime-main.js": "/andrian-kars/andrian-kars.github.io/static/js/runtime-main.9bb6d4f0.js",
-    "runtime-main.js.map": "/andrian-kars/andrian-kars.github.io/static/js/runtime-main.9bb6d4f0.js.map",
-    "static/js/2.e55c38ab.chunk.js": "/andrian-kars/andrian-kars.github.io/static/js/2.e55c38ab.chunk.js",
-    "static/js/2.e55c38ab.chunk.js.map": "/andrian-kars/andrian-kars.github.io/static/js/2.e55c38ab.chunk.js.map",
-    "static/js/3.55ffe7c0.chunk.js": "/andrian-kars/andrian-kars.github.io/static/js/3.55ffe7c0.chunk.js",
-    "static/js/3.55ffe7c0.chunk.js.map": "/andrian-kars/andrian-kars.github.io/static/js/3.55ffe7c0.chunk.js.map",
-    "index.html": "/andrian-kars/andrian-kars.github.io/index.html",
-    "static/css/main.fe9fb039.chunk.css.map": "/andrian-kars/andrian-kars.github.io/static/css/main.fe9fb039.chunk.css.map",
-    "static/js/2.e55c38ab.chunk.js.LICENSE.txt": "/andrian-kars/andrian-kars.github.io/static/js/2.e55c38ab.chunk.js.LICENSE.txt",
-    "static/media/logo.74750d47.gif": "/andrian-kars/andrian-kars.github.io/static/media/logo.74750d47.gif",
-    "static/media/old-personal.dceb35e2.jpg": "/andrian-kars/andrian-kars.github.io/static/media/old-personal.dceb35e2.jpg",
-    "static/media/osf-academy.47622f70.jpg": "/andrian-kars/andrian-kars.github.io/static/media/osf-academy.47622f70.jpg",
-    "static/media/projects.0ec715b2.jpg": "/andrian-kars/andrian-kars.github.io/static/media/projects.0ec715b2.jpg",
-    "static/media/social.86b98bf9.jpg": "/andrian-kars/andrian-kars.github.io/static/media/social.86b98bf9.jpg",
-    "static/media/vader.0c592181.png": "/andrian-kars/andrian-kars.github.io/static/media/vader.0c592181.png"
+    "main.css": "/static/css/main.6f38d756.chunk.css",
+    "main.js": "/static/js/main.4b55d3ea.chunk.js",
+    "main.js.map": "/static/js/main.4b55d3ea.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.061f0f7d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.061f0f7d.js.map",
+    "static/js/2.e55c38ab.chunk.js": "/static/js/2.e55c38ab.chunk.js",
+    "static/js/2.e55c38ab.chunk.js.map": "/static/js/2.e55c38ab.chunk.js.map",
+    "static/js/3.55ffe7c0.chunk.js": "/static/js/3.55ffe7c0.chunk.js",
+    "static/js/3.55ffe7c0.chunk.js.map": "/static/js/3.55ffe7c0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6f38d756.chunk.css.map": "/static/css/main.6f38d756.chunk.css.map",
+    "static/js/2.e55c38ab.chunk.js.LICENSE.txt": "/static/js/2.e55c38ab.chunk.js.LICENSE.txt",
+    "static/media/logo.74750d47.gif": "/static/media/logo.74750d47.gif",
+    "static/media/old-personal.dceb35e2.jpg": "/static/media/old-personal.dceb35e2.jpg",
+    "static/media/osf-academy.47622f70.jpg": "/static/media/osf-academy.47622f70.jpg",
+    "static/media/projects.0ec715b2.jpg": "/static/media/projects.0ec715b2.jpg",
+    "static/media/social.86b98bf9.jpg": "/static/media/social.86b98bf9.jpg",
+    "static/media/vader.0c592181.png": "/static/media/vader.0c592181.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bb6d4f0.js",
+    "static/js/runtime-main.061f0f7d.js",
     "static/js/2.e55c38ab.chunk.js",
-    "static/css/main.fe9fb039.chunk.css",
+    "static/css/main.6f38d756.chunk.css",
     "static/js/main.4b55d3ea.chunk.js"
   ]
 }
