@@ -11,7 +11,7 @@
   outline:none;
   height: 15px;
   width: 110px;
-  font-size: 11px;
+  font-size: 10px;
   background: linear-gradient(180deg, #737373, #111);
   border-radius: 3px 0 0 3px;
   border: 2px outset #737373;
@@ -19,6 +19,11 @@
   font-style: italic;
   font-weight: 700;
   color: #b8b4b4;
+
+  @media (min-width: 340px) {
+    width: 120px;
+    font-size: 11px;
+  }
 
   @media (min-width: 569px) {
     font-size: 14px;
@@ -34,7 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10px;
+  height: 15px;
   width: 0px;
   background: #fff;
   border-radius: 0 50px 50px 0;
@@ -52,10 +57,11 @@
     font-size: 12px;
     transition: all .5s;
     letter-spacing: 0.5px;
+    transition: none;
   }
 
   @media (min-width: 569px) {
-    height: 15px;
+    height: 20px;
 
     span {
       font-size: 14px;
@@ -69,10 +75,15 @@
   opacity: 1;
   width: 205px;
   z-index: 999;
-
+  
   span {
+    transition: 5s;
     visibility: visible;
     opacity: 1;
+  }
+
+  @media (min-width: 340px) {
+    width: 215px;
   }
 
   @media (min-width: 569px) {

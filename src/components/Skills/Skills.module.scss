@@ -80,6 +80,10 @@
     width: 315px;
     margin-bottom: 40px;
 
+    @media (min-width: 340px) {
+        width: 335px;
+    }
+
     @media (min-width: 569px) {
         width: 460px;
     }
