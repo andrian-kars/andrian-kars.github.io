@@ -28,7 +28,7 @@ const App = () => {
               <Route exact path="/skills" render={() => <Skills />} />
               <Route exact path="/works" render={() => <Works />} />
               <Route exact path="/contact" render={() => <Contact />} />
-              <Route exact path="*" render={() => <div />} />
+              <Route exact path="*" render={() => <Redirect to={'/home'} />} />
             </Switch>
           </div>
         </main>
