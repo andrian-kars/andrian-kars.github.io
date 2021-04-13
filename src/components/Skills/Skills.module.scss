@@ -9,35 +9,82 @@
     background-color: $mainBgColor;
 
     h2 {
+        text-align: center;
         color: $whiteColor;
-        font-size: 52px;
+        font-size: 26px;
         font-weight: 700;
-        margin-top: 30px;
+        margin-top: 20px;
         z-index: 69;
 
+        @media (min-width: 569px) {
+            font-size: 32px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 42px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 52px;
+        }
+
         span {
+            display: inline-block;
             color: $mainColor;
+            cursor: pointer;
+            border-bottom: 2px dotted $mainColor;
+            transition: .3s;
+
+            &:hover {
+                color: $yellowColor;
+                border-color: $yellowColor;
+            }
         }
     }
 
     p {
         color: $mainColor;
         text-align: center;
-        line-height: 20px;
+        line-height: 15px;
+        font-size: 12px;
         font-style: italic;
         margin: 10px 0 50px;
         z-index: 69;
+
+        @media (min-width: 569px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
     }
 }
 
 .content {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-around;
+    align-items: center;
     z-index: 69;
+
+    @media (min-width: 1400px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .item {
-    width: 590px;
+    width: 315px;
     margin-bottom: 40px;
+
+    @media (min-width: 569px) {
+        width: 460px;
+    }
+
+    @media (min-width: 768px) {
+        width: 590px;
+    }
 }

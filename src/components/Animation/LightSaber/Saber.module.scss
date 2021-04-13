@@ -9,16 +9,22 @@
   justify-content: center;
   align-items: center;
   outline:none;
-  height: 20px;
-  width: 140px;
+  height: 15px;
+  width: 110px;
+  font-size: 11px;
   background: linear-gradient(180deg, #737373, #111);
   border-radius: 3px 0 0 3px;
   border: 2px outset #737373;
   -webkit-box-reflect: below 1px linear-gradient(180deg, transparent, rgba(255,255,255,0.3));
   font-style: italic;
-  font-size: 14px;
   font-weight: 700;
   color: #b8b4b4;
+
+  @media (min-width: 569px) {
+    font-size: 14px;
+    height: 20px;
+    width: 140px;
+  }
 }
 .hilt:active {
   border: 2px outset #737373;
@@ -27,7 +33,8 @@
 .saber {
   display: flex;
   justify-content: center;
-  height: 15px;
+  align-items: center;
+  height: 10px;
   width: 0px;
   background: #fff;
   border-radius: 0 50px 50px 0;
@@ -35,17 +42,48 @@
   right: 5px;
   -webkit-box-reflect: below 1px linear-gradient(180deg, transparent, rgba(255,255,255,0.2));
   transition: all 1s;
+  visibility: hidden;
+  opacity: 0;
 
   span {
     visibility: hidden;
     opacity: 0;
     font-style: italic;
-    font-size: 14px;
+    font-size: 12px;
     transition: all .5s;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
 
+  @media (min-width: 569px) {
+    height: 15px;
+
+    span {
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+  }
 }
+
+.activated {
+  visibility: visible;
+  opacity: 1;
+  width: 205px;
+  z-index: 999;
+
+  span {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media (min-width: 569px) {
+    width: 320px;
+  }
+
+  @media (min-width: 768px) {
+    width: 450px;
+  }
+}
+
 .darkSaber {
   background: #000;
   border-radius: 0 50px 0 0;

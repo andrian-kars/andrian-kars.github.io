@@ -5,7 +5,7 @@ export type HardType = {
 }
 
 export type SoftType = {
-    skill: string
+    description: string
 }
 
 export type LanguagesType = {
