@@ -12,14 +12,34 @@
     display: flex;
     flex-direction: column;
     padding-top: 27vh;
-    padding-left: 80px;
+    
     z-index: 999;
 
+    @media (min-width: 768px) {
+        padding-left: 40px;
+    }
+
+    @media (min-width: 1500px) {
+        padding-left: 80px;
+    }
+
     h1 {
-        font-size: 80px;
+        font-size: 32px;
         margin-bottom: 20px;
         font-weight: 700;
         color: $whiteColor;
+
+    @media (min-width: 512px) {
+        font-size: 40px;
+    }
+
+    @media (min-width: 1069px) {
+        font-size: 60px;
+    }
+
+    @media (min-width: 1500px) {
+        font-size: 80px;
+    }
 
         span {
             color: $mainColor;
@@ -27,9 +47,19 @@
     }
 
     p {
-        font-size: 20px;
-        margin-bottom: 60px;
+        font-size: 14px;
+        margin-bottom: 30px;
         color: $mainColor;
+
+        @media (min-width: 512px) {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 1069px) {
+            margin-bottom: 60px;
+            font-size: 20px;
+        }
     }
 
     a {
@@ -38,14 +68,27 @@
         // align-items: center;
         // text-align: center;
         line-height: 0;
-        height: 60px;
-        width: 200px;
+        height: 40px;
+        width: 120px;
+        font-size: 16px;
+
+        @media (min-width: 512px) {
+            height: 50px;
+            width: 140px;
+            font-size: 18px;
+        }
+
+        @media (min-width: 1069px) {
+            height: 60px;
+            width: 200px;
+            font-size: 24px;
+        }
     }
 }
 
 
 .image {
-    display: flex;
+    display: none;
     align-self: center;
     width: 100vh;
     max-width: 40%;
@@ -54,4 +97,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 999;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
 }

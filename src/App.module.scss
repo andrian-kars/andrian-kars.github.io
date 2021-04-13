@@ -1,32 +1,36 @@
 @import './styles/variables';
 
 .app {
-    display: none;
+    display: flex;
     min-height: 100vh;
     background-color: $mainBgColor;
 
-    @media (min-width: 1400px) {
-        display: flex;
-    }
+    // @media (min-width: 1400px) {
+    //     display: flex;
+    // }
 }
 
-.mobile {
-    background-color: $mainBgColor;
-    height: 100vh;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 700;
+// .mobile {
+//     background-color: $mainBgColor;
+//     height: 100vh;
+//     text-align: center;
+//     padding: 20px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 18px;
+//     font-weight: 700;
 
-    @media (min-width: 1400px) {
-        display: none;
-    }
-}
+//     @media (min-width: 1400px) {
+//         display: none;
+//     }
+// }
 
 .content {
     width: 100%;
     background-color: $mainBgColor;
+
+    @media (min-width: 512px) {
+        padding-left: 69px;
+    }
 }

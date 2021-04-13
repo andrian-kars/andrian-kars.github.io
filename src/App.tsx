@@ -14,7 +14,7 @@ const App = () => {
   return (
     <HashRouter>
       <Provider store={store}>
-        <div className={s.mobile}>Don't worry. We are working on mobile design. Use your computer.</div>
+        {/* <div className={s.mobile}>Don't worry. We are working on mobile design. Use your computer.</div> */}
         <main className={s.app}>
           <Navigation />
           <div className={s.content}>

@@ -6,6 +6,7 @@ html {
   font-family: 'Roboto', sans-serif;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  background-color: $mainBgColor;
 }
 
 *, *:before, *:after {

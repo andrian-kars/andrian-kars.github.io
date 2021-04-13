@@ -2,7 +2,8 @@
 
 .navigation {
     background-color: $mainCompColor;
-    display: flex;
+    position: fixed;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -10,6 +11,10 @@
     width: 69px;
     min-height: 100vh;
     z-index: 999;
+
+    @media (min-width: 512px) {
+        display: flex;
+    }
 
     svg {
         width: 20px;
