@@ -1,12 +1,12 @@
 @import './../../../styles/variables';
 
 .BucketOfBolts {
-  background-color:black;
+  background-color:$mainCompColor;
   overflow: hidden;
   position: absolute;
 	top: 0;
 	right: 0;
-	left: 0;
+	left: -99px;
 	bottom: 0;
 	z-index: 10;
 }
@@ -100,8 +100,8 @@
 }
 
 .falconContainer{
-  width:200px;
-  top:30%;
+  width: 200px;
+  top: 30%;
   margin:0 auto;
   display: none;
   position:relative;

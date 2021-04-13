@@ -1,9 +1,9 @@
 @import './../../styles/variables';
 
 .contacts {
+    position: relative;
     display: flex;
     justify-content: space-around;
-    // min-height: 100vh;
     width: 100%;
     min-height: 100vh;
     background-color: $mainBgColor;
@@ -12,24 +12,10 @@
 .content {
     display: flex;
     flex-direction: column;
-    padding-top: 40%;
+    padding-top: 570px;
     z-index: 999;
 
-    a {
-        border-color: #ff00ff;
-        display: flex;
-        line-height: 0;
-        height: 60px;
-        width: 200px;
-
-        span {
-            color: #ff00ff !important;
-        }
-
-        &:hover {
-            span {
-                color: $mainColor !important;
-            }
-        }
+    @media (min-width: 580px) {
+        padding-top: 750px;
     }
 }
