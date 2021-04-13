@@ -5,15 +5,17 @@
     justify-content: space-around;
     // min-height: 100vh;
     width: 100%;
-    background-color: $mainBgColor;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    padding-top: 27vh;
-    
-    z-index: 999;
+    padding-top: 60px;
+    z-index: 69;
+
+    @media (min-width: 512px) {
+        padding-top: 27vh;
+    }
 
     @media (min-width: 768px) {
         padding-left: 40px;

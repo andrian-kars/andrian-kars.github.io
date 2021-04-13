@@ -6,7 +6,11 @@ html {
   font-family: 'Roboto', sans-serif;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  background-color: $mainBgColor;
+  background-color: $mainCompColor;
+
+  @media (min-width: 768px) {
+      background-color: $mainBgColor;
+  }
 }
 
 *, *:before, *:after {

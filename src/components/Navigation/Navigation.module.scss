@@ -3,17 +3,21 @@
 .navigation {
     background-color: $mainCompColor;
     position: fixed;
-    display: none;
-    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    width: 69px;
-    min-height: 100vh;
     z-index: 999;
 
     @media (min-width: 512px) {
         display: flex;
+        flex-direction: column;
+        width: 69px;
+        min-height: 100vh;
+        padding: 20px 0;
     }
 
     svg {
@@ -35,20 +39,45 @@
 }
 
 .logo {
+    display: none;
     width: 59px;
     height: 60px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-width: 512px) {
+        display: block;
+    }
 }
 
 .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+
     .link {
         display: inline-block;
-        margin-bottom: 30px;
+        
         svg {
             width: 25px;
             height: 25px;
+            margin: 10px 15px;
+        }
+    }
+
+    @media (min-width: 512px) {
+        display: block;
+        width: auto;
+
+        .link {
+            margin-bottom: 30px;
+
+            svg {
+                margin: 0;
+            }
         }
     }
 }
@@ -56,9 +85,14 @@
 
 
 .socials {
+    display: none;
 
     .social a {
         display: inline-block;
         margin-bottom: 20px;
+    }
+
+    @media (min-width: 512px) {
+        display: block;
     }
 }

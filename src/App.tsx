@@ -9,12 +9,16 @@ import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Works from './components/Works/Works'
 import Contact from './components/Contact/Contact'
+import NightSky from './components/Animation/NightSky/NightSky'
 
 const App = () => {
   return (
     <HashRouter>
       <Provider store={store}>
         <main className={s.app}>
+          <div className={s.mobileBg}>
+            <NightSky />
+          </div>
           <Navigation />
           <div className={s.content}>
             <Switch>
