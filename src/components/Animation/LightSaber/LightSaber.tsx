@@ -17,7 +17,7 @@ const LightSaber: React.FC<PropsType> = (props) => {
     const lightSaber = () => { setEditMode(!activateSaber) }
 
     return <div className={s.sabers}>
-        <button onClick={lightSaber} type="button" className={s.hilt}>{props.skill ? props.skill : 'Yoda taught' }<div className={s.switch}></div></button>
+        <button onClick={lightSaber} type="button" className={s.hilt}>{props.skill ? props.skill : 'Yoda taught me' }<div className={s.switch}></div></button>
         <div style={activateSaber
             ? { boxShadow: `0 0 5px #fff, 0 0 10px #fff, 0 0 15px ${props.color}, 0 0 20px ${props.color}, 0 0 35px ${props.color}, 0 0 40px ${props.color}` }
             : { boxShadow: `0 0 5px #fff, 0 0 10px #fff, 0 0 15px ${props.color}` }}
