@@ -3,10 +3,6 @@
 .about {
     display: flex;
     min-height: 100vh;
-
-    @media (min-width: 1069px) {
-
-    }
 }
 
 .content {
@@ -18,7 +14,6 @@
     z-index: 69;
 
     @media (min-width: 1069px) {
-        padding-top: 100px;
         flex-direction: row;
         justify-content: space-between;
     }

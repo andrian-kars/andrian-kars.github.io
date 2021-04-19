@@ -2,7 +2,7 @@
 
 .shootingStars {
   background: radial-gradient(ellipse at bottom, #0e151d 0%, #090a0f 100%);
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   display: none;
   @media (min-width: 1400px) {
