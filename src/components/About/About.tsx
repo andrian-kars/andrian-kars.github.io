@@ -19,7 +19,7 @@ const About: React.FC<PropsType> = ({ aboutInfo, educationInfo, experienceInfo})
         <p className={s.description}>{it.description}</p>
     </div>))
     const experience = experienceInfo.map(it => ( <div key={it.title} className={s.item}>
-        <p className={s.title}>{it.title}<span className={s.time}>{it.time}</span><a href={it.link} target='_blank' rel='noreferrer' className={s.link}>here</a></p>
+        <p className={s.title}>{it.title}<span className={s.time}>{it.time}</span><a href={it.link} target='_blank' rel='noreferrer' className={s.link}>see here</a></p>
         <p className={s.description}>{it.description}</p>
     </div>))
 

@@ -9,7 +9,7 @@ const ButtonTypeTwo: React.FC<PropsType> = ({ href, content }) => {
     return <div className={s.button}>
         <ul>
             <li>
-                <a href='https://github.com/andrian-kars' target='_blank' rel='noreferrer'>
+                <a href='https://github.com/andrian-kars' target='_blank' rel='noreferrer' aria-label="github">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -20,7 +20,7 @@ const ButtonTypeTwo: React.FC<PropsType> = ({ href, content }) => {
                 </a>
             </li>
             <li>
-                <a href={href} target='_blank' rel='noreferrer'>
+                <a href={href} target='_blank' rel='noreferrer' aria-label="linkedin">
                     <span></span>
                     <span></span>
                     <span></span>

@@ -8,7 +8,7 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Works from './components/Works/Works'
-import Contact from './components/Contact/Contact'
+// import Contact from './components/Contact/Contact'
 import NightSky from './components/Animation/NightSky/NightSky'
 
 const App: React.FC = () => {
@@ -27,7 +27,7 @@ const App: React.FC = () => {
               <Route exact path="/about" render={() => <About />} />
               <Route exact path="/skills" render={() => <Skills />} />
               <Route exact path="/works" render={() => <Works />} />
-              <Route exact path="/contact" render={() => <Contact />} />
+              {/* <Route exact path="/contact" render={() => <Contact />} /> */}
               <Route exact path="*" render={() => <Redirect to={'/home'} />} />
             </Switch>
           </div>
