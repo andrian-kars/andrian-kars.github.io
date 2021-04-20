@@ -4,7 +4,7 @@ import ButtonTypeOne from './../Animation/ButtonTypeOne/ButtonTypeOne'
 import NightSky from './../Animation/NightSky/NightSky'
 import CV from './../../images/cv.pdf'
 
-const Home = () => {
+const Home: React.FC = () => {
     return <div className={s.home}>
         <NightSky />
         <div className={s.content}>

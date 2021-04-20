@@ -11,7 +11,7 @@ import Works from './components/Works/Works'
 import Contact from './components/Contact/Contact'
 import NightSky from './components/Animation/NightSky/NightSky'
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <HashRouter>
       <Provider store={store}>

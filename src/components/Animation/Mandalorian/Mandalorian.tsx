@@ -1,7 +1,7 @@
 import s from './Mandalorian.module.scss'
 
 
-const Mandalorian = () => {
+const Mandalorian: React.FC = () => {
     return (
         <div className={s.mandalorian}>
             <svg viewBox="0 0 600 600">

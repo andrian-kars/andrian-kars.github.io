@@ -3,7 +3,7 @@ import s from './Contact.module.scss'
 import NightSky from '../Animation/NightSky/NightSky'
 import ButtonTypeTwo from '../Animation/ButtonTypeTwo/ButtonTypeTwo'
 
-const Contact = () => {
+const Contact: React.FC = () => {
     return <div className={s.contacts}>
         <NightSky />
         <Mandalorian />

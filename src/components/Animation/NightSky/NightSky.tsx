@@ -1,6 +1,6 @@
 import s from './NightSky.module.scss'
 
-const NightSky = () => {
+const NightSky: React.FC = () => {
     return <div className={s.stars}>
         <div className={s.starsGroup1}></div>
         <div className={s.starsGroup2}></div>

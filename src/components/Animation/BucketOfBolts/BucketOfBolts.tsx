@@ -1,6 +1,6 @@
 import s from './BucketOfBolts.module.scss'
 
-const BucketOfBolts = () => {
+const BucketOfBolts: React.FC = () => {
     return <div className={s.BucketOfBolts}>
         <div className={s.starLayerClose}>
             <div className={`${s.smallStar} ${s.star0}`}></div>

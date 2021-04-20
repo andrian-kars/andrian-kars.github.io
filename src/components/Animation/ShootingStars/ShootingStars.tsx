@@ -1,6 +1,6 @@
 import s from './ShootingStars.module.scss'
 
-const ShootingStars = () => {
+const ShootingStars: React.FC = () => {
     
     return <div className={s.shootingStars}>
         <div className={s.night}>

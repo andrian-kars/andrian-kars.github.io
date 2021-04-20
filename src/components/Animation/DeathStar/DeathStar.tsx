@@ -1,7 +1,7 @@
 import s from './DeathStar.module.scss'
 
 
-const DeathStart = () => {
+const DeathStart: React.FC = () => {
     return <div className={s.deathStart}>
         <div className={s.box}>
             <div className={s.star1}>
