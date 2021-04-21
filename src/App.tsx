@@ -1,5 +1,7 @@
 import { HashRouter, Redirect, Route, Switch } from 'react-router-dom'
 import s from './App.module.scss'
+import { Provider } from 'react-redux'
+import store from './redux/store'
 // Components
 import { Navigation } from './components/Navigation/Navigation'
 import { Home } from './components/Home/Home'
@@ -11,7 +13,8 @@ import NightSky from './components/Animation/NightSky/NightSky'
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
+    <Provider store={store}>
+      <HashRouter>
         <main className={s.app}>
           <div className={s.mobileBg}>
             <NightSky />
@@ -29,7 +32,8 @@ const App: React.FC = () => {
             </Switch>
           </div>
         </main>
-    </HashRouter>
+      </HashRouter>
+    </Provider>
   )
 }
 
