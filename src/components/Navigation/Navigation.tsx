@@ -1,8 +1,9 @@
 import s from './Navigation.module.scss'
 import { NavLink } from 'react-router-dom'
 import logo from './../../images/background/logo.gif'
+import { memo } from 'react'
 
-const Navigation = () => {
+export const Navigation: React.FC = memo(() => {
     return <nav className={s.navigation}>
         <NavLink style={{ backgroundImage: `url('${logo}'` }} aria-label="home" className={s.logo} exact to="/home"></NavLink>
         <ul className={s.links}>
@@ -56,6 +57,4 @@ const Navigation = () => {
             </a></li>
         </ul>
     </nav>
-}
-
-export default Navigation
+})

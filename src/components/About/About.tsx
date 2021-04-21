@@ -1,24 +1,25 @@
 import s from './About.module.scss'
 import DeathStar from '../Animation/DeathStar/DeathStar'
 import { AppStateType } from '../../redux/store'
-import { connect } from 'react-redux'
-import { AboutType } from '../../Types'
+import { useSelector } from 'react-redux'
+import { memo } from 'react'
 
-type PropsType = {
-    aboutInfo: Array<AboutType>
-    educationInfo: Array<AboutType>
-    experienceInfo: Array<AboutType>
-}
 
-const About: React.FC<PropsType> = ({ aboutInfo, educationInfo, experienceInfo}) => {
-    const about = aboutInfo.map(it => ( <div key={it.title} className={s.item}>
+export const About: React.FC = memo(() => {
+    const aboutInfo = useSelector((state: AppStateType) => state.about.aboutInfo)
+    const educationInfo = useSelector((state: AppStateType) => state.about.educationInfo)
+    const experienceInfo = useSelector((state: AppStateType) => state.about.experienceInfo)
+
+    const about = aboutInfo.map(it => (<div key={it.title} className={s.item}>
         <p className={s.titleAbout}>{it.title}<span className={s.descriptionAbout}>{it.description}</span></p>
     </div>))
-    const education = educationInfo.map(it => ( <div key={it.title} className={s.item}>
+
+    const education = educationInfo.map(it => (<div key={it.title} className={s.item}>
         <p className={s.title}>{it.title}<span className={s.time}>{it.time}</span></p>
         <p className={s.description}>{it.description}</p>
     </div>))
-    const experience = experienceInfo.map(it => ( <div key={it.title} className={s.item}>
+
+    const experience = experienceInfo.map(it => (<div key={it.title} className={s.item}>
         <p className={s.title}>{it.title}<span className={s.time}>{it.time}</span><a href={it.link} target='_blank' rel='noreferrer' className={s.link}>see here</a></p>
         <p className={s.description}>{it.description}</p>
     </div>))
@@ -48,12 +49,4 @@ const About: React.FC<PropsType> = ({ aboutInfo, educationInfo, experienceInfo})
             </div>
         </div>
     </div>
-}
-
-const mapStateToProps = (state: AppStateType) => ({
-    aboutInfo: state.about.aboutInfo,
-    educationInfo: state.about.educationInfo,
-    experienceInfo: state.about.experienceInfo
 })
-
-export default connect(mapStateToProps, {})(About)

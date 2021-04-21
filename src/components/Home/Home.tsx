@@ -3,12 +3,13 @@ import vader from './../../images/background/vader.png'
 import ButtonTypeOne from './../Animation/ButtonTypeOne/ButtonTypeOne'
 import NightSky from './../Animation/NightSky/NightSky'
 import CV from './../../images/cv.pdf'
+import { memo } from 'react'
 
-const Home: React.FC = () => {
+export const Home: React.FC = memo(() => {
     return <div className={s.home}>
         <NightSky />
         <div className={s.content}>
-            <h1>Hi,<br/>
+            <h1>Hi,<br />
                 I'm <span>Andrian,</span><br />
                 Software Engineer.</h1>
             <p>Frontend Developer / Dark Theme Programmer</p>
@@ -19,6 +20,4 @@ const Home: React.FC = () => {
         </div>
         <div style={{ backgroundImage: `url('${vader}'` }} className={s.image}></div>
     </div>
-}
-
-export default Home
+})

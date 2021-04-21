@@ -1,14 +1,13 @@
-import { connect } from 'react-redux'
+import { memo } from 'react'
+import { useSelector } from 'react-redux'
 import { AppStateType } from '../../redux/store'
 import { WorksType } from '../../Types'
 import BucketOfBolts from '../Animation/BucketOfBolts/BucketOfBolts'
 import s from './Works.module.scss'
 
-type PropsType = {
-    works: Array<WorksType>
-}
+export const Works: React.FC = memo(() => {
+    const works: Array<WorksType> = useSelector((state: AppStateType) => state.works.works)
 
-const Works: React.FC<PropsType> = ({works}) => {
     const worksMapped = works.map(it => (
         <div key={it.name} style={{ backgroundImage: `url('${it.photo}'` }} className={s.work}>
             <a href={it.link} target='_blank' rel='noreferrer' className={s.workContent}>
@@ -18,6 +17,7 @@ const Works: React.FC<PropsType> = ({works}) => {
             </a>
         </div>
     ))
+    
     return <div className={s.works}>
         <BucketOfBolts />
         <div className={s.content}>
@@ -31,10 +31,4 @@ const Works: React.FC<PropsType> = ({works}) => {
             </div>
         </div>
     </div>
-}
-
-const mapStateToProps = (state: AppStateType) => ({
-    works: state.works.works,
 })
-
-export default connect(mapStateToProps, {})(Works)
