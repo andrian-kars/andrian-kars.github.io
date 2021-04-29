@@ -21,14 +21,7 @@ export const Works: React.FC = memo(() => {
     return <div className={s.works}>
         <BucketOfBolts />
         <div className={s.content}>
-            <div className={s.row}>
-                {worksMapped[0]}
-                {worksMapped[1]}
-            </div>
-            <div className={s.row}>
-                {worksMapped[2]}
-                {worksMapped[3]}
-            </div>
+            {worksMapped}
         </div>
     </div>
 })

@@ -3,7 +3,6 @@
 .works {
     position: relative;
     display: flex;
-    justify-content: space-around;
     min-width: 100%;
     min-height: 100vh;
     padding: 10px 0 10px;
@@ -14,31 +13,24 @@
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100%;
+    padding-top: 40px;
     width: 100%;
-    justify-content: space-around;
     min-height: 100%;
     z-index: 69;
-}
 
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    &:hover .work {
+        opacity: 1;
+    }
 
     @media (min-width: 850px) {
-        flex-direction: row;
-        justify-content: space-around;
-
-        &:hover .work {
-            opacity: 1;
-        }
+        grid-template-columns: 50% 50%;
     }
 }
 
 .work {
+    margin: 0 auto;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,6 +95,7 @@
         text-align: center;
         padding-bottom: 10px;
         font-size: 18px;
+        line-height: 24px;
 
         &:last-child {
             font-size: 16px;
