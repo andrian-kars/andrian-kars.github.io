@@ -10,12 +10,8 @@
 .content {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 27vh;
     z-index: 69;
-
-    @media (min-width: 512px) {
-        padding-top: 27vh;
-    }
 
     @media (min-width: 768px) {
         padding-left: 40px;
